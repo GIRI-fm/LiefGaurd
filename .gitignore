@@ -1,0 +1,252 @@
+# ============================================================================
+# LiefGaurd .gitignore - Comprehensive coverage for embedded, AI, and mobile
+# ============================================================================
+
+# ============================================================================
+# PlatformIO & ESP32 Development
+# ============================================================================
+.pio/
+.pioenvs/
+.piolibdeps/
+.platformio/
+*.o
+*.a
+*.so
+*.lib
+*.exe
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+build/
+dist/
+firmware/.pio/
+
+# ============================================================================
+# Arduino IDE
+# ============================================================================
+.pioenvs/
+.platformio/
+*.pem
+*.key
+*.crt
+
+# ============================================================================
+# Python & TensorFlow
+# ============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.venv
+venv/
+ENV/
+env/
+.venv/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# TensorFlow & ML artifacts
+*.tflite
+*.pb
+*.ckpt
+*.h5
+*.hdf5
+*.SavedModel/
+*.pb.txt
+logs/
+tb_logs/
+runs/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.ipynb
+
+# ============================================================================
+# Node.js & React Native / React
+# ============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.npm
+.eslintcache
+.node_repl_history
+.yarn-integrity
+dist/
+build/
+.cache/
+.next/
+out/
+
+# React Native specific
+*.apk
+*.jks
+android/app/debug/
+android/app/release/
+ios/Pods/
+Podfile.lock
+.DS_Store
+
+# ============================================================================
+# Flutter & Dart
+# ============================================================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+*.app
+*.ipa
+*.apk
+*.aab
+*.zip
+*.tar.gz
+.dart_tool/
+.packages
+*.packages
+
+# Flutter generated files
+pubspec.lock
+local.properties
+GeneratedPluginRegistrant.java
+GeneratedPluginRegistrant.m
+
+# ============================================================================
+# IDE & Editor Files
+# ============================================================================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.vimrc
+.editorconfig
+.DS_Store
+Thumbs.db
+*.iml
+*.iws
+*.ipr
+.gradle/
+
+# ============================================================================
+# Operating System Files
+# ============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+desktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+.AppleDouble
+.LSOverride
+
+# ============================================================================
+# Docker & Containers
+# ============================================================================
+.docker/
+docker-compose.override.yml
+.dockerignore
+
+# ============================================================================
+# Database & Sensitive Data
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.log
+secrets.json
+.env
+.env.local
+.env.*.local
+firebase-credentials.json
+google-services.json
+GoogleService-Info.plist
+
+# ============================================================================
+# Backup & Temporary Files
+# ============================================================================
+*.bak
+*.backup
+*.tmp
+*.temp
+*~
+*.swp
+*.swo
+.#*
+
+# ============================================================================
+# Compiled Binary Objects
+# ============================================================================
+*.o
+*.obj
+*.exe
+*.dll
+*.dylib
+*.so
+*.a
+*.la
+*.lai
+*.lo
+
+# ============================================================================
+# Firmware-Specific
+# ============================================================================
+*.hex
+*.elf
+*.bin
+*.map
+*.lst
+
+# ============================================================================
+# Project-Specific (LiefGaurd)
+# ============================================================================
+/firmware/lib/
+/ai_model/datasets/raw/
+/ai_model/models/*.pb
+/mobile_app/android/.gradle/
+/mobile_app/ios/Pods/
+/backend/migrations/__pycache__/
+recovery_targets_output.json
+telemetry_dump.csv
